@@ -1,6 +1,12 @@
+*
+!/**/
+!*.*
+
 # Prerequisites
 *.d
 .pro
+.vscode/
+
 
 # Compiled Object files
 *.slo
