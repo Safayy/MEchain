@@ -1,4 +1,13 @@
 #TODO
+## Main parts
+- [ ] Website
+    - [ ] Create account
+    - [ ] 
+- [ ] API
+    - [ ] Query database
+- [ ] Blockchain
+    - [ ] Database
+
 ## Implement c++ concepts
 - [ ] Arrays
 - [ ] Pointers
@@ -18,4 +27,3 @@
 ## Else
 - [ ] Find real medical data
 - [ ] Identify 
-
