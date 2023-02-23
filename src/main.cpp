@@ -1,4 +1,5 @@
-/**In the context of a blockchain application, the main.cpp file would
+/**
+ * In the context of a blockchain application, the main.cpp file would
  *  typically create and manage the blockchain object, and provide an
  *  interface for adding new blocks and retrieving existing ones.
  *  It may also interact with other parts of the system, such as the user
@@ -37,9 +38,9 @@ string generateRandomString(int length) {
 Block createNewBlock(int blockNumber, string previousBlockHash, string information) {
     Block newBlock;
     newBlock.blockNumber = blockNumber;
-    newBlock.currentBlockHash = generateRandomString(10); // Generate random string for current block hash
+    newBlock.currentBlockHash = generateRandomString(10);
     newBlock.previousBlockHash = previousBlockHash;
-    newBlock.timestamp = time(nullptr); // Get current time
+    newBlock.timestamp = time(nullptr);
     newBlock.information = information;
     return newBlock;
 }
@@ -51,12 +52,10 @@ void printBlock(Block block) {
 int main() {
     vector<Block> blockchain;
 
-    // Create first block with dummy information
     Block firstBlock = createNewBlock(0, "", "Employee ID: 123456 | Name: John Doe | Employment Type: Full-time | Department: IT | Branch: Kuala Lumpur");
     blockchain.push_back(firstBlock);
     printBlock(firstBlock);
 
-    // Create additional blocks with more information
     Block secondBlock = createNewBlock(1, firstBlock.currentBlockHash, "Patient ID: 789012 | Sickness: Flu | Medicine Collection Type: On-demand | Outpatient clinic visit no. since 01/01/2023: 2nd time | Panel clinic name: Klinik Medik");
     blockchain.push_back(secondBlock);
     printBlock(secondBlock);
