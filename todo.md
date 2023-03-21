@@ -2,11 +2,10 @@
 ## Main parts
 - [ ] Website
     - [ ] Create account
-    - [ ] 
-- [ ] API
-    - [ ] Query database
-- [ ] Blockchain
-    - [ ] Database
+    - [ ] API
+        - [ ] Query database
+    - [ ] Download mining application
+- [ ] Desktop Application to mine and be a node
 
 ## Implement c++ concepts
 - [ ] Arrays
