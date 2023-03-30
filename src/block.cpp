@@ -1,11 +1,18 @@
 #include "block.h"
 #include <iostream>
+#include <openssl/sha.h>
 
 Block::Block(int blockNumber, const std::string& previousBlockHash, const std::string& information) :
         blockNumber_(blockNumber),
         previousBlockHash_(previousBlockHash),
         information_(information) {
-    currentBlockHash_ = generateRandomString(10);
+    unsigned char hash[SHA256_DIGEST_LENGTH];
+    SHA256((const unsigned char*)(previousBlockHash_.c_str()), previousBlockHash_.length(), hash);
+    char hashStr[SHA256_DIGEST_LENGTH*2+1];
+    for (int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
+        sprintf(&hashStr[i*2], "%02x", (unsigned int)hash[i]);
+    }
+    currentBlockHash_ = std::string(hashStr);
     timestamp_ = time(nullptr);
 }
 
