@@ -1,6 +1,6 @@
 # MEchain: A Blockchain-Based Medical Application
 
-MEchain is a revolutionary medical application that leverages blockchain technology to improve the security, privacy, and efficiency of medical data management. The application provides a decentralized platform for medical professionals, patients, and researchers to access, store, and share medical data in a secure and transparent manner.
+MEchain is a revolutionary medical application that leverages blockchain technology to improve the security, privacy, and efficiency of medical data management. The application provides a decentralized platform for medical professionals, patients, and researchers to access, store, and share medical data in a secure and transparent manner with your trusted professionals.
 
 ## Features
 
